@@ -1,0 +1,24 @@
+p {
+    font-size: 44px;
+}
+
+/*
+.qty_parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+*/
+
+.qty_child{
+   display: inline-block;
+}
+
+.price_child{
+    display: inline-block;
+}
+
+div{
+    color:white;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="scrpt" href="search.js">
+    
+    
+    <body style="background-color:black">
+    
+    <center>
+    <h1 style="color:white">Joe's Wholesale Incorporated</h1>
+    <br>
+    <h3 style="color:white">Product Search</h3>
+    <br>
+    
+    <div>
+    <form method="post" action="search.php">
+        
+        <label for="Product Name (substring)">Product Name (substring)</label><br>
+        <input type="text" name="tab0">
+        <br>
+        
+        <label for="Warehouse City (substring)">Warehouse City (substring)</label><br>
+        <input type="text" name="tab1">
+        <br>
+        
+        <div>
+        <div class="qty_child">
+                <label for="Minimum Quantity">Minimum Quantity</label><br>
+                <input type="text" name="tab2">
+        </div>
+        <div class="qty_child">
+                <label for="Maximum Quantity">Maximum Quantity</label><br>
+                <input type="text" name="tab3">
+                <br>
+        </div> 
+        </div>
+        
+            <div class="price_child">
+                <label for="Minimum Price">Minimum Price</label><br>
+                <input type="text" name="tab4">
+                <br>
+            </div>
+            
+            <div class="price_child">
+                <label for="Maximum Price">Maximum Price</label><br>
+                <input type="text" name="tab5">
+                <br>
+            </div>
+        
+        <br>
+        <br>
+        
+        <button id="clear" type="reset">Clear Form</button>
+        <button id="search" type="submit">Search Products</button>
+        
+    </form>    
+    
+    
+    <script>
+        const element = document.getElementById("search");
+        element.addEventListener("click", openResults);
+
+       /* function openResults() {
+            window.open("search.php");
+
+        }*/
+    </script>
+    
+    </center>    
